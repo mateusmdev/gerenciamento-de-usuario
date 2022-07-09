@@ -1,0 +1,255 @@
+:root{
+    --itens: #26273b;
+    --cards-color: #aebbc4;
+}
+.user-description{
+    display: flex;
+    justify-content: space-between;
+}
+.description p{
+    font-style: italic;
+    opacity: 0.6;
+}
+.path{
+    font-size: 1em;
+    position: relative;
+    left: -20px;
+}
+.path i{
+    margin-right: 7px;
+}
+
+.card{
+    
+    background: var(--itens);
+    width: 90%;
+    height: 140px;
+    margin: 20px auto;
+    color: var(--cards-color);
+    padding: 0.9em;
+    border-radius: 5px;
+    position: relative; 
+}
+.card > i{
+    color: svar(--text-menu-hover);
+    font-size: 4.4em;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.card > p{
+    font-size: 1.9em;
+}
+.card > p span{
+    display: block;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.settings{
+    text-align: center;
+}
+.settings a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px 15px;
+    color: var(--text-menu-hover);
+    padding-bottom: 2px;
+    border-bottom: 5px solid transparent;
+    font-size: 1.3em;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0.5em;
+    background: var(--text-menu-hover);
+    text-align: center;
+    width: calc(100% );
+    border-spacing: 0.5em;
+}
+
+th{
+    background: var(--text-menu-hover);
+}
+td, th{
+    width: 25%;
+    padding: 7px 4.2px;
+}
+tr{
+    background: var(--itens);
+    background: rsed;
+    margin: 10px 0;
+}
+
+
+div.img-tabela{
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    background: white;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.img-tabela img{
+    height: 100%;
+    width: 100%;
+}
+.action-button{
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin: 4px 0;
+    padding: 2px 3px;
+    border-radius: 3px;
+}
+.action-button:hover{
+    opacity: 0.5;
+}
+.button-edit{
+    color: #5dccbb;
+}
+.button-delete{
+    color: #f94065;
+}
+
+fieldset{
+    display: nsone;
+    border: none;
+}
+legend{
+    display: none;
+}
+
+form{
+    border: 1px solid resd;;
+    padding: 10px;
+    margin: auto;
+    text-align: cee;
+    background: var(--itens);
+    border-top: 4px solid var(--text-menu-hover);
+    border-radius: 4px;
+}
+form .input-group{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+}
+form .input-group input{
+    margin: 5px 0;
+    padding: 7px 12px;
+    outline: none;
+    border: 2px solid var(--text-menu);
+    border-radius: 5px;
+}
+input[type=text], 
+input[type=email], 
+input[type=date], 
+input[type=password], 
+input[type=file]{
+    width: 100%;
+}
+form .input-group input:focus{
+    border-color: var(--text-menu-hover);
+}
+.img-profile{
+    width: 120px;
+    height: 120px;
+    border: 1px solid var(--text-menu);
+    background: white;
+    border-radius: 50%;
+    margin: auto;
+}
+.img-profile img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+#foto-description{
+    margin: 5px auto;
+}
+.required-field input{
+    border: 2px solid red !important;
+}
+.project a{
+    color: var(--cards-color);
+    font-size: 1.1em;
+}
+.button-disabled{
+    opacity: 0.3 !important;
+}
+.update{
+    width: 365px;
+    display: none !important;
+}
+@media screen and (min-width: 980px){
+    .settings{
+        display: none;
+    }
+    .all{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around
+    }
+    .user{
+        width: calc(100% - 390px);
+        display: initial !important;
+    }
+    .register{
+        width: 365px;
+        display: initial !important;
+    }
+    .register.hide{
+        display: none !important;
+    }
+    .update{
+        width: 365px;
+        display: none !important;
+    }
+    .update.visible{
+        display: initial !important;
+    }
+    .register form {
+        width: 100%;
+    }
+
+    .cards{
+        display: flex;
+        justify-content: space-around;
+    }
+    .card{
+        width: 49%;
+    }
+}
+@media screen and (max-width: 980px){
+    .cards{
+        display: flex;
+        justify-content: space-around;
+    }
+    .card{
+        width: 49%;
+    }
+    .register{
+        display: none;
+    }
+    .register.hide{
+        display: none !important;
+    }
+
+}
+@media screen and (max-width: 580px){
+    .cards{
+        display: block;
+    }
+    .card{
+        width: 100%;
+    }
+    .col-img{
+        display: none;
+        width: 0;
+        overflow: hidden;
+    }
+    .img-tabela{
+        display: none;
+    }
+}

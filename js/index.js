@@ -1,0 +1,1 @@
+new UserController(new UserView())

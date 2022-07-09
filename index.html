@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Usuários</title>
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="" id="toggle-checkbox">
+        <label for="toggle-checkbox">
+            <i class="fas fa-bars toggle"></i>
+        </label>
+
+        <div class="logo">
+            <h1>Logo <span class="logo-style">Aqui</span></h1>
+        </div>
+
+        <nav class="navigation">
+            <ul class="navigation-list">
+                <li class="list-item">
+                    <a href="#" class="link-list">
+                        <i class="fas fa-users"></i>
+                        <span>
+                            Usuários
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="user-description">
+            <div class="description">
+                <h2>Usuarios</h2>
+                <p>Gerenciamento de Usuário</p>
+            </div>
+            <div class="path">
+                <i class="fas fa-home"></i>
+                Home > Usuários
+            </div>
+        </div>
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <i class="fas fa-user-plus"></i>
+                    <p>
+                        Usuários
+                        <span class="" id="user-number">0</span>
+                    </p>
+                </div>
+
+                <div class="card t">
+                    <i class="fas fa-chart-pie"></i>
+                    <p>
+                        Admin
+                        <span id="admin-number">0</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="view">
+                <div class="settings">
+                    <a href="#" class="selected">
+                        <i class="fas fa-circle"></i>
+                        Usuário
+                    </a>
+                    <a href="#">
+                        <i class="far fa-circle"></i>
+                        Cadastro
+                    </a>
+                </div>
+
+                <div class="all">
+                    <div class="user">
+                        <h3>Lista de Usuários</h3>
+                        <table class="tabela">
+                            <thead>
+                                <tr>
+                                    <th class="col-img">Foto</th>
+                                    <th>Nome</th>
+                                    <th>Email</th>
+                                    <th>Admin</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            
+                            <tbody>
+                            
+                                
+                            </tbody>
+                        </table>
+                    </div>
+    
+                    <div class="register">
+                        <h3>Novo Usuário</h3>
+                        <form action="post">
+                            <fieldset>
+                                <legend>Dados</legend>
+                                <div class="input-group">
+                                    <label for="nome">Nome</label>
+                                    <input type="text" id="nome" placeholder="Digite seu nome">
+                                </div>
+                                <div class="input-group">
+                                    Sexo:
+    
+                                    <label for="sexo">
+                                        <input type="radio" value="masculino" name="sexo" checked>
+                                        Masculino
+                                    </label>
+    
+                                    <label for="sexo">
+                                        <input type="radio" value="feminino" name="sexo">
+                                        Feminino
+                                    </label>
+                                    
+                                </div>
+                                <div class="input-group">
+                                    <label for="data-nascimento">Data de Nascimento</label>
+                                    <input type="date" id="data-nascimento" placeholder="dd/mm/aaaa">
+                                </div>
+                                <div class="input-group">
+                                    <label for="pais">País</label>
+                                    <input type="text" id="pais" placeholder="Digite seu país">
+                                </div>
+                                <div class="input-group">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" id="email" placeholder="Digite seu e-mail">
+                                </div>
+                                <div class="input-group">
+                                    <label for="senha">Senha</label>
+                                    <input type="password" id="senha" placeholder="Digite sua senha">
+                                </div>
+                                <div class="input-group">
+                                    <div class="img-profile">
+                                        <img src="img/user.png" alt="">
+                                    </div>
+                                    <label for="foto" id="foto-description">Foto</label>
+                                    <input id="foto" type="file">
+                                </div>
+                                Administrador <input type="checkbox" name="admin" id="admin"> 
+                                <button type="submit" id="btn-submit">Enviar</button>
+                            </fieldset>
+                        </form>
+
+                    </div>
+
+                    <div class="update">
+                        <h3>Editar Usuário</h3>
+                        <form action="post">
+                            <fieldset>
+                                <legend>Dados</legend>
+                                <div class="input-group">
+                                    <label for="nome">Nome</label>
+                                    <input type="text" id="nome" placeholder="Digite seu nome" class="update-input">
+                                </div>
+                                <div class="input-group">
+                                    Sexo:
+    
+                                    <label for="sexo">
+                                        <input type="radio" value="masculino" name="sexo" checked>
+                                        Masculino
+                                    </label>
+    
+                                    <label for="sexo">
+                                        <input type="radio" value="feminino" name="sexo">
+                                        Feminino
+                                    </label>
+                                    
+                                </div>
+                                <div class="input-group">
+                                    <label for="data-nascimento">Data de Nascimento</label>
+                                    <input type="date" id="data-nascimento" placeholder="dd/mm/aaaa" class="update-input">
+                                </div>
+                                <div class="input-group">
+                                    <label for="pais">País</label>
+                                    <input type="text" id="pais" placeholder="Digite seu país" class="update-input">
+                                </div>
+                                <div class="input-group">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" id="email" placeholder="Digite seu e-mail" class="update-input">
+                                </div>
+                                <div class="input-group">
+                                    <label for="senha">Senha</label>
+                                    <input type="password" id="senha" placeholder="Digite sua senha" class="update-input">
+                                </div>
+                                <div class="input-group">
+                                    <div class="img-profile">
+                                        <img src="img/user.png" alt="">
+                                    </div>
+                                    <label for="foto" id="foto-description">Foto</label>
+                                    <input id="foto-update" type="file">
+                                </div>
+                                Administrador <input type="checkbox" name="admin" id="admin-update" class="update-input"> 
+                                <button type="submit" id="btn-submit-update" class="btn">Enviar</button>
+                                <button id="btn-cancel-update" class="btn">Cancel</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+        </div>
+    </main>
+    <footer>
+        <p>Projeto Criado por Mateus</p>
+        <nav>
+            <div class="social-media">
+                <a href="https://github.com/mateusjf" id="git"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mateus-melo-318461211/" id="linkedin"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="project">
+                <a href="https://github.com/mateusjf/dev-coins">Dev Coins</a> | 
+                <a href="https://github.com/mateusjf/Pomodoro-App">Pomodoro App</a> | 
+                <a href="https://github.com/mateusjf/gerador-de-senha">Gerador de Senha</a>
+            </div>
+        </nav>
+    </footer>
+</body>
+<script src="js/controller/userController.js"></script>
+<script src="js/model/user.js"></script>
+<script src="js/view/userView.js"></script>
+<script src="js/index.js"></script>
+</html>
